@@ -1,23 +1,30 @@
 import Marionette from "backbone.marionette";
+import ListView from "./list.view";
 import $ from "jquery";
 
 let HomeView;
 
-HomeView = Marionette.ItemView.extend({
+HomeView = Marionette.LayoutView.extend({
 
   template: false,
 
   el: ".container",
+
+  regions: {
+    "list": ".list"
+  },
 
   events: {
   	'click .title' : 'clickEvent'
   },
 
   initialize(){
-    let data = $("#data").data("initial");
+    let data = $("#data").data("initial"),
+        flowers = new Backbone.Collection(data);
 
-    console.log(data);
-  	
+    this.listView = new ListView({collection: flowers});
+
+  	this.getRegion("list").show(this.listView);
   },
 
   clickEvent : function(){

@@ -34,7 +34,11 @@ module.exports = function (grunt) {
                         query: {
                           presets: ['es2015']
                         }
-                      }
+                      },
+                      { 
+                        test: /\.jade$/, 
+                        loader: "jade" 
+                      },
                     ]
                   }
             }
