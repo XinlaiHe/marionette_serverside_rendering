@@ -1,3 +1,3 @@
-import HomeView from './views/home.view';
+import HomeView from './core/views/home.view';
 
 let homeView = new HomeView();

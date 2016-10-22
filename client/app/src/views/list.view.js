@@ -10,7 +10,7 @@ ListView = Marionette.CollectionView.extend({
 
   className: "flowers",
 
-  tagName: "div",
+  tagName: "table",
 
   childView: FlowerView,
 

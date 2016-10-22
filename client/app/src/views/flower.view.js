@@ -9,7 +9,7 @@ FlowerView = Marionette.ItemView.extend({
 
   className: "flower",
 
-  tagName: "div"
+  tagName: "tr"
 
 });
 

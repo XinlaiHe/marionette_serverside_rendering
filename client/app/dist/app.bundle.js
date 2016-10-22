@@ -18007,7 +18007,7 @@
 
 	  className: "flowers",
 
-	  tagName: "div",
+	  tagName: "table",
 
 	  childView: _flower2.default,
 
@@ -18045,7 +18045,7 @@
 
 	  className: "flower",
 
-	  tagName: "div"
+	  tagName: "tr"
 
 	});
 
@@ -18062,7 +18062,7 @@
 	var jade_mixins = {};
 	var jade_interp;
 	;var locals_for_with = (locals || {});(function (name, price) {
-	buf.push("<div class=\"flower\"><span>" + (null == (jade_interp = name) ? "" : jade_interp) + "</span><span>" + (null == (jade_interp = price) ? "" : jade_interp) + "</span></div>");}.call(this,"name" in locals_for_with?locals_for_with.name:typeof name!=="undefined"?name:undefined,"price" in locals_for_with?locals_for_with.price:typeof price!=="undefined"?price:undefined));;return buf.join("");
+	buf.push("<td>" + (null == (jade_interp = name) ? "" : jade_interp) + "</td><td>" + (null == (jade_interp = price) ? "" : jade_interp) + "</td>");}.call(this,"name" in locals_for_with?locals_for_with.name:typeof name!=="undefined"?name:undefined,"price" in locals_for_with?locals_for_with.price:typeof price!=="undefined"?price:undefined));;return buf.join("");
 	}
 
 /***/ },
@@ -18334,7 +18334,7 @@
 	var jade_mixins = {};
 	var jade_interp;
 
-	buf.push("<div class=\"flowers\"></div>");;return buf.join("");
+	buf.push("<table class=\"flowers\"></table>");;return buf.join("");
 	}
 
 /***/ }

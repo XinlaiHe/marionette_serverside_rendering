@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         jshint: {
-            files: ['./app/src/main.js', './app/src/collections/*', './app/src/models/*', './app/src/views/*', 'app.js'],
+            files: ['./app/src/main.js', './app/src/collections/*', './app/src/models/*', './app/src/views/*', './app/src/core/views/*' , 'app.js'],
             options: {
                 globals: {
                     jQuery: true,
@@ -76,7 +76,7 @@ module.exports = function (grunt) {
             }
         },
         watch: {
-            files: ['<%= jshint.files %>', './app/src/templates/*', './app/src/styles/*'],
+            files: ['<%= jshint.files %>', './app/src/templates/*', './app/src/styles/*', './app/src/core/templates/*'],
             tasks: ['jshint', 'webpack:build', 'uglify', 'compass', 'cssmin'],
             server: {
                 files: ['.rebooted'],
