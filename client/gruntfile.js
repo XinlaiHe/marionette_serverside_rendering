@@ -111,8 +111,8 @@ module.exports = function (grunt) {
         },
         cssmin: {
             css:{
-                src: 'dest/css/app.bundle.css',
-                dest: 'dest/css/app.min.css'
+                src: './app/dist/app.bundle.css',
+                dest: './app/dist/app.min.css'
             }
         },    
     });
